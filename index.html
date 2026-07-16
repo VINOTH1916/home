@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Home — Tile & Design Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Our New Home</p>
+      <h1 class="hero-title">Tiles &amp; Design<br /><span>Inspiration Gallery</span></h1>
+      <p class="hero-subtitle">Every surface tells a story — explore our curated tile selections for every corner of the home.</p>
+      <a href="#gallery" class="hero-cta">Explore Gallery</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+      <p>Scroll down</p>
+    </div>
+  </header>
+
+  <!-- ===== NAV PILLS ===== -->
+  <nav class="category-nav" id="gallery">
+    <button class="pill active" data-target="surface">🪨 Floor Surface</button>
+    <button class="pill" data-target="portioSurface">🏛️ Portio Surface</button>
+    <button class="pill" data-target="bathroom">🚿 Bathroom</button>
+    <button class="pill" data-target="potioWall">🧱 Patio Wall</button>
+    <button class="pill" data-target="outdoor">🌿 Outdoor</button>
+    <button class="pill" data-target="kitchen">🍳 Kitchen</button>
+  </nav>
+
+  <!-- ===== SECTIONS ===== -->
+  <main class="sections-wrapper">
+
+    <section class="gallery-section" id="section-surface">
+      <div class="section-header">
+        <div class="section-icon">🪨</div>
+        <div>
+          <h2>Floor Surface Tiles</h2>
+          <p>Elegant flooring to set the foundation of every room.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-surface" data-folder="images/surface"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section alt" id="section-portioSurface">
+      <div class="section-header">
+        <div class="section-icon">🏛️</div>
+        <div>
+          <h2>Portio Surface Tiles</h2>
+          <p>Refined tiles that define your portico and entrance areas.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-portioSurface" data-folder="images/portioSurface"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="section-bathroom">
+      <div class="section-header">
+        <div class="section-icon">🚿</div>
+        <div>
+          <h2>Bathroom Tiles</h2>
+          <p>Spa-inspired tiles for a luxurious bathing experience.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-bathroom" data-folder="images/bathroom"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section alt" id="section-potioWall">
+      <div class="section-header">
+        <div class="section-icon">🧱</div>
+        <div>
+          <h2>Patio Wall Tiles</h2>
+          <p>Textured wall designs that bring character to outdoor living.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-potioWall" data-folder="images/potioWall"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="section-outdoor">
+      <div class="section-header">
+        <div class="section-icon">🌿</div>
+        <div>
+          <h2>Outdoor Tiles</h2>
+          <p>Weather-resistant beauties for driveways, gardens and exteriors.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-outdoor" data-folder="images/outdoor"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section alt" id="section-kitchen">
+      <div class="section-header">
+        <div class="section-icon">🍳</div>
+        <div>
+          <h2>Kitchen Tiles</h2>
+          <p>Vibrant backsplashes and countertop tiles for a chef's paradise.</p>
+        </div>
+      </div>
+      <div class="scroll-track-wrapper">
+        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <div class="scroll-track" id="track-kitchen" data-folder="images/kitchen"></div>
+        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lb-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lb-img" />
+      <p class="lb-caption" id="lb-caption"></p>
+    </div>
+    <button class="lightbox-nav lb-next" id="lb-next" aria-label="Next">&#8594;</button>
+  </div>
+  <div class="lightbox-backdrop" id="lb-backdrop"></div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">🏠 Our Dream Home</p>
+      <p class="footer-tagline">Built with love, tiled with perfection.</p>
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
