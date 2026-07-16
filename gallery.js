@@ -27,35 +27,28 @@ const SECTIONS = [
    BOOT
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
-  fetchManifestAndRender();
+  renderGallery();
   initCategoryNav();
   initLightbox();
 });
 
 /* ============================================================
-   FETCH MANIFEST → RENDER CARDS
+   RENDER CARDS — reads from window.GALLERY_DATA (set in HTML)
    ============================================================ */
-async function fetchManifestAndRender() {
-  let manifest = {};
-
-  try {
-    const res = await fetch('images.json');
-    if (res.ok) manifest = await res.json();
-  } catch (_) {
-    // images.json not present — shows empty state per section
-  }
+function renderGallery() {
+  const manifest = window.GALLERY_DATA || {};
 
   SECTIONS.forEach(sec => {
     const track = document.getElementById('track-' + sec.id);
     if (!track) return;
 
-    const images = (manifest[sec.id] || []);
+    const images = manifest[sec.id] || [];
 
     if (images.length === 0) {
       track.innerHTML = `
         <div class="empty-state">
           <div class="empty-icon">🖼️</div>
-          <p>Add images to <strong>${sec.folder}/</strong><br>and update <strong>images.json</strong> to display them here.</p>
+          <p>Add images to <strong>${sec.folder}/</strong><br>and list them in <strong>GALLERY_DATA</strong> inside index.html.</p>
         </div>`;
       return;
     }
@@ -64,9 +57,9 @@ async function fetchManifestAndRender() {
       const src   = `${sec.folder}/${filename}`;
       const name  = filename.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ');
       const card  = document.createElement('div');
-      card.className     = 'tile-card';
-      card.dataset.src   = src;
-      card.dataset.label = `${sec.label} — ${name}`;
+      card.className       = 'tile-card';
+      card.dataset.src     = src;
+      card.dataset.label   = `${sec.label} — ${name}`;
       card.dataset.section = sec.id;
       card.dataset.index   = idx;
       card.innerHTML = `

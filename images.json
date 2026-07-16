@@ -1,9 +1,23 @@
 {
-  "surface":       [],
-  "portioSurface": [],
-  "bathroom":      [],
-  "potioWall":     [],
-  "outdoor":       [],
-  "kitchen":       [],
-  "steps":         []
+  "surface": [
+    "image.png"
+  ],
+  "portioSurface": [
+    "image.png"
+  ],
+  "bathroom": [
+    "image.png"
+  ],
+  "potioWall": [
+    "image.png"
+  ],
+  "outdoor": [
+    "image.png"
+  ],
+  "kitchen": [
+    "image.png"
+  ],
+  "steps": [
+    "image.png"
+  ]
 }
