@@ -48,7 +48,7 @@ function renderGallery() {
       track.innerHTML = `
         <div class="empty-state">
           <div class="empty-icon">🖼️</div>
-          <p>Add images to <strong>${sec.folder}/</strong><br>and list them in <strong>GALLERY_DATA</strong> inside index.html.</p>
+          <p>No images yet — add filenames to <strong>GALLERY_DATA</strong> in index.html.</p>
         </div>`;
       return;
     }
