@@ -19,10 +19,7 @@
       <p class="hero-subtitle">Every surface tells a story — explore our curated tile selections for every corner of the home.</p>
       <a href="#gallery" class="hero-cta">Explore Gallery</a>
     </div>
-    <div class="hero-scroll-hint">
-      <span></span>
-      <p>Scroll down</p>
-    </div>
+    <div class="hero-scroll-hint"><span></span><p>Scroll down</p></div>
   </header>
 
   <!-- ===== NAV PILLS ===== -->
@@ -34,6 +31,7 @@
     <button class="pill" data-target="outdoor">🌿 Outdoor</button>
     <button class="pill" data-target="kitchen">🍳 Kitchen</button>
     <button class="pill" data-target="steps">🪜 Steps</button>
+    <button class="pill pill-admin" id="btn-admin" title="Admin upload panel">⚙️ Manage</button>
   </nav>
 
   <!-- ===== SECTIONS ===== -->
@@ -42,105 +40,91 @@
     <section class="gallery-section" id="section-surface">
       <div class="section-header">
         <div class="section-icon">🪨</div>
-        <div>
-          <h2>Floor Surface Tiles</h2>
-          <p>Elegant flooring to set the foundation of every room.</p>
-        </div>
+        <div><h2>Floor Surface Tiles</h2><p>Elegant flooring to set the foundation of every room.</p></div>
+        <button class="upload-btn" data-section="surface" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-surface" data-folder="images/surface"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section alt" id="section-portioSurface">
       <div class="section-header">
         <div class="section-icon">🏛️</div>
-        <div>
-          <h2>Portio Surface Tiles</h2>
-          <p>Refined tiles that define your portico and entrance areas.</p>
-        </div>
+        <div><h2>Portio Surface Tiles</h2><p>Refined tiles that define your portico and entrance areas.</p></div>
+        <button class="upload-btn" data-section="portioSurface" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-portioSurface" data-folder="images/portioSurface"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section" id="section-bathroom">
       <div class="section-header">
         <div class="section-icon">🚿</div>
-        <div>
-          <h2>Bathroom Tiles</h2>
-          <p>Spa-inspired tiles for a luxurious bathing experience.</p>
-        </div>
+        <div><h2>Bathroom Tiles</h2><p>Spa-inspired tiles for a luxurious bathing experience.</p></div>
+        <button class="upload-btn" data-section="bathroom" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-bathroom" data-folder="images/bathroom"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section alt" id="section-potioWall">
       <div class="section-header">
         <div class="section-icon">🧱</div>
-        <div>
-          <h2>Patio Wall Tiles</h2>
-          <p>Textured wall designs that bring character to outdoor living.</p>
-        </div>
+        <div><h2>Patio Wall Tiles</h2><p>Textured wall designs that bring character to outdoor living.</p></div>
+        <button class="upload-btn" data-section="potioWall" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-potioWall" data-folder="images/potioWall"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section" id="section-outdoor">
       <div class="section-header">
         <div class="section-icon">🌿</div>
-        <div>
-          <h2>Outdoor Tiles</h2>
-          <p>Weather-resistant beauties for driveways, gardens and exteriors.</p>
-        </div>
+        <div><h2>Outdoor Tiles</h2><p>Weather-resistant beauties for driveways, gardens and exteriors.</p></div>
+        <button class="upload-btn" data-section="outdoor" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-outdoor" data-folder="images/outdoor"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section alt" id="section-kitchen">
       <div class="section-header">
         <div class="section-icon">🍳</div>
-        <div>
-          <h2>Kitchen Tiles</h2>
-          <p>Vibrant backsplashes and countertop tiles for a chef's paradise.</p>
-        </div>
+        <div><h2>Kitchen Tiles</h2><p>Vibrant backsplashes and countertop tiles for a chef's paradise.</p></div>
+        <button class="upload-btn" data-section="kitchen" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-kitchen" data-folder="images/kitchen"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
     <section class="gallery-section" id="section-steps">
       <div class="section-header">
         <div class="section-icon">🪜</div>
-        <div>
-          <h2>Steps Tiles</h2>
-          <p>Durable and stylish tiles designed for staircases and step surfaces.</p>
-        </div>
+        <div><h2>Steps Tiles</h2><p>Durable and stylish tiles designed for staircases and step surfaces.</p></div>
+        <button class="upload-btn" data-section="steps" title="Upload images">＋ Upload</button>
       </div>
       <div class="scroll-track-wrapper">
-        <button class="arrow arrow-left" aria-label="Scroll left">&#8592;</button>
+        <button class="arrow arrow-left">&#8592;</button>
         <div class="scroll-track" id="track-steps" data-folder="images/steps"></div>
-        <button class="arrow arrow-right" aria-label="Scroll right">&#8594;</button>
+        <button class="arrow arrow-right">&#8594;</button>
       </div>
     </section>
 
@@ -158,6 +142,59 @@
   </div>
   <div class="lightbox-backdrop" id="lb-backdrop"></div>
 
+  <!-- ===== ADMIN PANEL ===== -->
+  <div class="admin-backdrop" id="admin-backdrop"></div>
+  <div class="admin-panel" id="admin-panel" role="dialog" aria-modal="true" aria-label="Admin settings">
+    <div class="admin-header">
+      <h2>⚙️ Upload Settings</h2>
+      <button class="admin-close" id="admin-close">&times;</button>
+    </div>
+    <div class="admin-body">
+      <p class="admin-info">
+        Enter your <strong>GitHub Personal Access Token</strong> to enable image uploads directly from this page.<br/>
+        The token is stored only in your browser (localStorage) — never sent anywhere except GitHub API.
+      </p>
+      <div class="admin-steps">
+        <p>📋 <strong>How to get a token:</strong></p>
+        <ol>
+          <li>Go to <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens/new</a></li>
+          <li>Note: <code>home gallery token</code></li>
+          <li>Expiration: choose any</li>
+          <li>Scope: tick <strong>repo</strong> (full control)</li>
+          <li>Click <strong>Generate token</strong> and copy it</li>
+        </ol>
+      </div>
+      <label class="admin-label" for="gh-token">GitHub Token</label>
+      <div class="token-row">
+        <input type="password" id="gh-token" class="admin-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off" />
+        <button class="token-toggle" id="token-toggle" title="Show/hide">👁</button>
+      </div>
+      <div class="admin-actions">
+        <button class="btn-save" id="btn-save-token">💾 Save Token</button>
+        <button class="btn-clear" id="btn-clear-token">🗑 Clear</button>
+      </div>
+      <p class="token-status" id="token-status"></p>
+    </div>
+  </div>
+
+  <!-- ===== UPLOAD MODAL ===== -->
+  <div class="upload-backdrop" id="upload-backdrop"></div>
+  <div class="upload-modal" id="upload-modal" role="dialog" aria-modal="true">
+    <div class="upload-modal-header">
+      <h3 id="upload-modal-title">Upload Images</h3>
+      <button class="upload-modal-close" id="upload-modal-close">&times;</button>
+    </div>
+    <div class="upload-modal-body">
+      <div class="drop-zone" id="drop-zone">
+        <div class="drop-icon">📁</div>
+        <p>Drag &amp; drop images here<br/><span>or click to browse</span></p>
+        <input type="file" id="file-input" accept="image/*" multiple hidden />
+      </div>
+      <div class="upload-queue" id="upload-queue"></div>
+      <button class="btn-upload-all" id="btn-upload-all" disabled>⬆️ Upload All</button>
+    </div>
+  </div>
+
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="footer-inner">
@@ -166,18 +203,6 @@
     </div>
   </footer>
 
-  <!-- Image manifest — update this when you add new images -->
-  <script>
-  window.GALLERY_DATA = {
-    "surface":       ["image.png"],
-    "portioSurface": ["image.png"],
-    "bathroom":      ["image.png"],
-    "potioWall":     ["image.png"],
-    "outdoor":       ["image.png"],
-    "kitchen":       ["image.png"],
-    "steps":         ["image.png"]
-  };
-  </script>
-  <script src="gallery.js?v=2"></script>
+  <script src="gallery.js?v=3"></script>
 </body>
 </html>
