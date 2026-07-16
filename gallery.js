@@ -20,6 +20,7 @@ const SECTIONS = [
   { id: 'potioWall',     label: 'Patio Wall',      folder: 'images/potioWall' },
   { id: 'outdoor',       label: 'Outdoor',         folder: 'images/outdoor' },
   { id: 'kitchen',       label: 'Kitchen',         folder: 'images/kitchen' },
+  { id: 'steps',         label: 'Steps',           folder: 'images/steps' },
 ];
 
 /* ============================================================
